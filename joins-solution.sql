@@ -1,5 +1,4 @@
---0. Get all customers and their addresses.
--- One (customer) to many (customer with multiple addresses - home, work, etc) relationship
+--0. Get all customers and their addresses. (One (customer) to many (customer with multiple addresses - home, work, etc) relationship)
 SELECT * FROM customers FULL OUTER JOIN addresses ON customers.id = addresses.customer_id;
 
 --1. Get all orders and their line items.
